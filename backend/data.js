@@ -1,4 +1,4 @@
-[
+const data = [
     {
         "label": "Suspect",
         "acv": 910146.81,
@@ -42,3 +42,5 @@
         "diffacvRate": 1
     }
 ]
+
+export default data;
