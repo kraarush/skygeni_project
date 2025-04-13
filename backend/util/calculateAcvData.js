@@ -5,7 +5,7 @@ const wonValue = data[data.length-1].acv;
 const updatedAcvData = data.map((item, index, arr) => {
     const ceilItem = {
         ...item,
-        acv: Math.ceil(item.acv),
+        acv: Math.round(item.acv),
     };
 
     if (index < arr.length - 1) {
