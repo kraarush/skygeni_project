@@ -3,13 +3,23 @@ import Card from "./component/Card";
 import { Button, ButtonGroup } from "@mui/material";
 import CustomHook from "./CustomHook";
 import { useSelector } from "react-redux";
+import { Loader2 } from "lucide-react";
 
 const App = () => {
-
+  
   CustomHook();
 
   const opportunityData = useSelector((store) => store.opportunityData);
   const acvData = useSelector((store) => store.acvData);
+  const loading = useSelector((store) => store.loading);
+
+  if (loading) {
+    return (
+      <div className="h-screen w-full flex items-center justify-center">
+        <Loader2 className="animate-spin w-10 h-10 mr-2" /> loading Data
+      </div>
+    )
+  }
 
   return (
     <div className="max-w-[1400px] mx-auto flex flex-col gap-2 my-4 p-2 sm:gap-4 sm:my-10 sm:p-4">

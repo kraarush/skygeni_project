@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import * as d3 from "d3";
 
-const RectangleBar = ({ percentage = 0.8, label, acv, count, diffRate, diffacvRate, bottomValue, rightPercentage}) => {
+const RectangleBar = ({ percentage, label, middleValue, diffRate, diffacvRate, bottomValue, rightPercentage}) => {
   const svgRef = useRef();
 
   const drawBar = (svg, percentage, totalWidth) => {
@@ -23,7 +23,7 @@ const RectangleBar = ({ percentage = 0.8, label, acv, count, diffRate, diffacvRa
       .attr("y", 0)
       .attr("width", activeWidth)
       .attr("height", height)
-      .attr("fill", "green");
+      .attr("fill", "#70ad47");
 
     svg
       .append("rect")
@@ -33,7 +33,7 @@ const RectangleBar = ({ percentage = 0.8, label, acv, count, diffRate, diffacvRa
       .attr("height", height)
       .attr("fill", "#ccc");
 
-    // Main label in center
+    // center value
     svg
       .append("text")
       .attr("x", sideWidth + activeWidth / 2)
@@ -42,7 +42,7 @@ const RectangleBar = ({ percentage = 0.8, label, acv, count, diffRate, diffacvRa
       .attr("dominant-baseline", "middle")
       .attr("fill", "white")
       .attr("font-size", "12px")
-      .text(count);
+      .text(middleValue);
 
     // visible only on smaller screen
     svg
