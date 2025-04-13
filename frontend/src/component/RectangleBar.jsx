@@ -72,17 +72,17 @@ const RectangleBar = ({ percentage, label, middleValue, diffRate, diffacvRate, b
 
   return (
     <div className="w-full max-w-[95vw] sm:max-w-2xl px-2 sm:px-4">
-      <div className="grid grid-cols-[1fr_10px] sm:grid-cols-[50px_1fr_20px] gap-2 sm:gap-4 items-center">
+      <div className="grid grid-cols-[1fr_10px] sm:grid-cols-[70px_1fr_20px] gap-2 sm:gap-4 items-center">
         <div className="hidden sm:block text-xs sm:text-sm font-medium text-gray-700 text-end">
           {label}
         </div>
         <svg ref={svgRef} className="w-full h-[25px] sm:h-[20px]" />
-        <div className="text-xs sm:text-sm font-semibold text-gray-600 text-start">
+        <div className="text-xs sm:text-sm font-bold text-gray-600 text-start">
           {rightPercentage}
         </div>
       </div>
 
-      <div className="grid grid-cols-[1fr_10px] sm:grid-cols-[50px_1fr_20px] mt-1">
+      <div className="grid grid-cols-[1fr_10px] sm:grid-cols-[70px_1fr_20px] mt-1">
         <div className="hidden sm:block" />
         <div className="text-center text-xs sm:text-sm font-semibold text-gray-800">
           {bottomValue}

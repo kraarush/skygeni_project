@@ -4,6 +4,7 @@ import { Button, ButtonGroup } from "@mui/material";
 import CustomHook from "./CustomHook";
 import { useSelector } from "react-redux";
 import { Loader2 } from "lucide-react";
+import TableCard from "./component/tableCard";
 
 const App = () => {
   
@@ -22,7 +23,7 @@ const App = () => {
   }
 
   return (
-    <div className="max-w-[1400px] mx-auto flex flex-col gap-2 my-4 p-2 sm:gap-4 sm:my-10 sm:p-4">
+    <div className="max-w-[1400px] mx-auto flex flex-col gap-4 my-4 p-2 sm:gap-4 sm:my-10 sm:p-4">
 
       {/* top bar */}
       <div className="border-b-3 border-gray-300">
@@ -40,7 +41,8 @@ const App = () => {
 
       {/* tables */}
       <div className="flex flex-col gap-4 sm:flex-row sm:gap-4 justify-center items-center">
-
+        <TableCard/>
+        <TableCard/>
       </div>
     </div>
   );
