@@ -22,7 +22,7 @@ const App = () => {
   if (loading) {
     return (
       <div className="h-screen w-full flex items-center justify-center">
-        <Loader2 className="animate-spin w-10 h-10 mr-2" /> loading Data
+        <Loader2 className="animate-spin w-10 h-10 mr-2" /> loading Data...
       </div>
     );
   }

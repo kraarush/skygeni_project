@@ -15,11 +15,10 @@ SkyGeni is a **full-stack data visualization project** built with the **MERN sta
 
 
 ## 📌 Features
-- 🧮 **ACV & Opportunity Data Analysis**: Fetched and calculated on demand
+- 🧮 **Data fetching**: Fetched data using custom hooks in the frontend
 - 🧠 **Data Utility Modules**: Organized logic for calculating metrics
 - 🔁 **API Integration**: Robust backend routes to support frontend needs
 - 💻 **Component-based UI**: React components for charts, tables, and cards
-- 🛠️ **Developer Friendly**: Vite-powered frontend with hot reload and ESLint
 
 
 ## 🛠️ Technologies Used
@@ -92,7 +91,7 @@ frontend/
 ## 🏗️ Setup & Installation
 1. 📥 Clone the repository:
    ```sh
-   git clone https://github.com/kraarush/OpportuneX.git
+   git clone https://github.com/kraarush/skygeni_project.git
    ```
 2. 📂 Navigate to the project directory:
    ```sh
