@@ -4,7 +4,8 @@ import { Button, ButtonGroup } from "@mui/material";
 import CustomHook from "./CustomHook";
 import { useSelector } from "react-redux";
 import { Loader2 } from "lucide-react";
-import TableCard from "./component/tableCard";
+import TableCard from "./component/TableCard";
+
 
 const App = () => {
   CustomHook();
