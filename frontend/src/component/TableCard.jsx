@@ -38,7 +38,7 @@ const TableCard = ({ data , totalValue}) => {
       {/* Table div */}
       <div className="px-3">
         <TableContainer component={Paper}>
-          <Table sx={{ border: "1px solid #ccc", minWidth: "600px" }} size="small" >
+          <Table sx={{ border: "1px solid #ccc" }} size="small" >
 
             <TableHead>
               <TableRow>

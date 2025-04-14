@@ -7,6 +7,7 @@ import { Loader2 } from "lucide-react";
 import TableCard from "./component/TableCard";
 import Footer from "./component/Footer";
 
+
 const App = () => {
   CustomHook();
 
@@ -46,13 +47,13 @@ const App = () => {
         </div>
 
         {/* cards for data visualization */}
-        <div className="flex flex-col gap-4 sm:flex-row sm:gap-4 justify-center items-center">
+        <div className="flex flex-col gap-4 lg:flex-row sm:gap-4 justify-center items-center">
           <Card key={1} data={opportunityData} heading={"opportunity count"} />
           <Card key={2} data={acvData} heading={"ACV"} />
         </div>
 
         {/* tables */}
-        <div className="flex flex-col gap-4 sm:flex-row sm:gap-4 justify-center items-center">
+        <div className="flex flex-col gap-4 lg:flex-row sm:gap-4 justify-center items-center">
           <TableCard
             key={1}
             data={opportunityTableData}
