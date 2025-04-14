@@ -8,7 +8,7 @@ const Card = ({heading, data}) => {
         <div className='py-3 px-3 text-xs md:text-sm border-b border-gray-300 w-full font-bold'>
             Win Rate by {heading}: {data[0].rightPercentage+"%" || "no data"}
         </div>
-        <div className='flex flex-col w-full gap-1 py-4 px-2'>
+        <div className='flex flex-col items-center gap-1 py-4 px-2'>
             {data.length>0 && data.map((item,index) => {
                 return <RectangleBar 
                 key={index} 
