@@ -28,7 +28,7 @@ const CustomHook = () => {
       } catch (error) {
         console.log(error); 
       } finally {
-        dispatch(setLoading(false));
+        dispatch(setLoading(false));  
       }
     };
 

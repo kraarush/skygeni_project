@@ -14,7 +14,7 @@ app.use(express.json());
 
 // cors setup
 const corsOption = {
-    origin: ['http://localhost:5173']
+    origin: ['http://localhost:5173', 'https://sygeniproject.netlify.app/']
 }
 app.use(cors(corsOption));
 
