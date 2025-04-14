@@ -105,3 +105,14 @@ frontend/
    ```sh
    npm run dev  #to start the server of backend and frontend
    ```
+
+
+## Redux state chart
+![Redux State](https://res.cloudinary.com/dhadivmz4/image/upload/v1744612555/redux_state_chart_vpt5wl.png)
+
+
+## Screenshots of website
+![Laptop screen](https://res.cloudinary.com/dhadivmz4/image/upload/v1744612554/laptop_screen_uxqr3v.png)
+![Mobile screen 1](https://res.cloudinary.com/dhadivmz4/image/upload/v1744612554/mob_screen_1_kbm2ei.png)
+![Mobile screen 2](https://res.cloudinary.com/dhadivmz4/image/upload/v1744612554/mob_screen_2_nexqhf.png)
+![Mobile screen 3](https://res.cloudinary.com/dhadivmz4/image/upload/v1744612553/mob_screen_3_mnythm.png)

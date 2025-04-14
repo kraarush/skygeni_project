@@ -31,7 +31,7 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div className="w-full" >
       <div className="max-w-[1400px] mx-auto flex flex-col gap-4 my-4 p-2 sm:gap-4 sm:my-10 sm:p-4">
         {/* top bar */}
         <div className="border-b-3 border-gray-300">
