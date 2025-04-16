@@ -62,9 +62,6 @@ backend/
 ├── index.js
 
 frontend/
-├── node_modules/
-├── public/
-│   └── vite.svg
 ├── redux/
 │   ├── acvData.slice.js
 │   ├── acvTable.slice.js
@@ -81,13 +78,7 @@ frontend/
 │   ├── index.css
 │   └── main.jsx
 ├── .env
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package-lock.json
-├── package.json
-├── README.md
-└── vite.config.js
+
 ```
 
 ## 🏗️ Setup & Installation
@@ -116,17 +107,17 @@ frontend/
 ## Screenshots of website
 
 ### 💻 Laptop Screen
-<img src="https://res.cloudinary.com/dhadivmz4/image/upload/v1744823763/laptop_screen_i7vyhv.png" style="border:1px solid #ccc; border-radius:4px;" />
+<img src="https://res.cloudinary.com/dhadivmz4/image/upload/v1744823763/laptop_screen_i7vyhv.png" />
 
 ### 📱 Tablet Screens
 <p align="center" >
-  <img src="https://res.cloudinary.com/dhadivmz4/image/upload/v1744823763/ipad_screen_tgxsmi.png" width="45%" />
-  <img src="https://res.cloudinary.com/dhadivmz4/image/upload/v1744825019/ipad_screen_1_lcjy56.png" width="45%" height="369"/>
+  <img src="https://res.cloudinary.com/dhadivmz4/image/upload/v1744823763/ipad_screen_tgxsmi.png" width="45%"/>
+  <img src="https://res.cloudinary.com/dhadivmz4/image/upload/v1744825019/ipad_screen_1_lcjy56.png" width="45%"/>
 </p>
 
 ### 📱 Mobile Screens
 <p align="center">
-  <img src="https://res.cloudinary.com/dhadivmz4/image/upload/v1744823764/mob_screen_1_eh2ozw.png" width="45%" height="331"/>
+  <img src="https://res.cloudinary.com/dhadivmz4/image/upload/v1744823764/mob_screen_1_eh2ozw.png" width="45%" />
   <img src="https://res.cloudinary.com/dhadivmz4/image/upload/v1744823763/mob_screen_2_eul7zj.png" width="45%" />
 </p>
 
