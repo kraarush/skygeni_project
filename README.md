@@ -112,7 +112,7 @@ frontend/
 
 
 ## Screenshots of website
-![Laptop screen](https://res.cloudinary.com/dhadivmz4/image/upload/v1744612554/laptop_screen_uxqr3v.png)
-![Mobile screen 1](https://res.cloudinary.com/dhadivmz4/image/upload/v1744612554/mob_screen_1_kbm2ei.png)
-![Mobile screen 2](https://res.cloudinary.com/dhadivmz4/image/upload/v1744612554/mob_screen_2_nexqhf.png)
-![Mobile screen 3](https://res.cloudinary.com/dhadivmz4/image/upload/v1744612553/mob_screen_3_mnythm.png)
+![Laptop screen](https://res.cloudinary.com/dhadivmz4/image/upload/v1744823763/laptop_screen_i7vyhv.png)
+![ipad screen](https://res.cloudinary.com/dhadivmz4/image/upload/v1744823763/ipad_screen_tgxsmi.png)
+![Mobile screen 1](https://res.cloudinary.com/dhadivmz4/image/upload/v1744823764/mob_screen_1_eh2ozw.png)
+![Mobile screen 2](https://res.cloudinary.com/dhadivmz4/image/upload/v1744823763/mob_screen_2_eul7zj.png)
