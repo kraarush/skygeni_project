@@ -1,8 +1,8 @@
-# 📊 SkyGeni
+# 📊 SkyGeni Assessment
 
 🔗 **Live Demo**: [SkyGeni Website](https://sygeniproject.netlify.app)
 
-SkyGeni is a **full-stack data visualization project** built with the **MERN stack** (Express + React), designed for processing, analyzing, and visualizing complex datasets. The platform supports structured data presentation with interactive charts and tables using D3.js and Material UI, making it suitable for analytical dashboards and enterprise reporting tools.
+This is a **full-stack data visualization project** built with the **MERN stack** (Express + React), designed for processing, analyzing, and visualizing complex datasets. The platform supports structured data presentation with interactive charts and tables using D3.js and Material UI, making it suitable for analytical dashboards and enterprise reporting tools.
 
 
 ### 💡 Key Highlights:
@@ -17,7 +17,7 @@ SkyGeni is a **full-stack data visualization project** built with the **MERN sta
 ## 📌 Features
 - 🧮 **Data fetching**: Fetched data using custom hooks in the frontend
 - 🧠 **Data Utility Modules**: Organized logic for calculating metrics
-- 🔁 **API Integration**: Robust backend routes to support frontend needs
+- 🔁 **API Integration**: Robust backend routes to support frontend needs using mvc architecture
 - 💻 **Component-based UI**: React components for charts, tables, and cards
 
 
