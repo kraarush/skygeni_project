@@ -51,7 +51,7 @@ const App = () => {
         {/* charts for json data visualization using custom card and not mui card component*/}
         <div className="flex flex-col gap-4 lg:flex-row sm:gap-4 justify-center items-center">
           <Card key={1} data={opportunityData} heading={"opportunity count"} />
-          <Card key={2} data={acvData} heading={"ACV"} />
+          <Card key={2} data={acvData} heading={"Acv"} />
         </div>
 
         {/* tables for tabular visualization of data */}

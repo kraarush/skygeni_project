@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import * as d3 from "d3";
 
-const RectangleBar = ({ percentage, label, middleValue, bottomValue, rightPercentage}) => {
+const RectangleBar = ({ percentage, sideLabel, middleValue, bottomValue, rightPercentage}) => {
   const svgRef = useRef();
 
   const drawBar = (svg, percentage, totalWidth) => {
@@ -27,7 +27,6 @@ const RectangleBar = ({ percentage, label, middleValue, bottomValue, rightPercen
       .attr("height", height)
       .attr("fill", "#70ad47");
 
-
     // last grey part
     svg
       .append("rect")
@@ -51,16 +50,17 @@ const RectangleBar = ({ percentage, label, middleValue, bottomValue, rightPercen
     // visible only on smaller screen when the lable gets inside the svg 
     svg
       .append("text")
-      .attr("x", 4)
+      .attr("x", 25)  
       .attr("y", height / 2)
       .attr("text-anchor", "middle")
       .attr("dominant-baseline", "middle")
       .attr("fill", "white")
       .attr("font-size", "10px")
       .attr("class", "inline sm:hidden")
-      .text(label);
+      .text(sideLabel);
   };
 
+  // 
   useEffect(() => {
     const svg = d3.select(svgRef.current);
 
@@ -76,11 +76,11 @@ const RectangleBar = ({ percentage, label, middleValue, bottomValue, rightPercen
 
   return (
     <div className="w-full max-w-[95vw] sm:max-w-2xl px-2 sm:px-4">
-      <div className="grid grid-cols-[1fr_10px] sm:grid-cols-[70px_1fr_20px] gap-2 sm:gap-4 items-center">
+      <div className="grid grid-cols-[1fr_30px] md:grid-cols-[70px_1fr_40px] gap-2 sm:gap-4 items-center">
 
         {/* left lable of the bar */}
         <div className="hidden sm:block text-xs sm:text-sm font-medium text-gray-700 text-end">
-          {label}
+          {sideLabel}
         </div>
 
         {/* svg  is shown here */}
@@ -88,19 +88,17 @@ const RectangleBar = ({ percentage, label, middleValue, bottomValue, rightPercen
 
         {/* percentage on the right of the bar */}
         <div className="text-xs sm:text-sm font-bold text-gray-600 text-start">
-          {rightPercentage}
+          {rightPercentage}%
         </div>
       </div>
 
       {/* bottom value of the bar which shows how much percent the green bar part of the below bar is of the top one */}
-      <div className="grid grid-cols-[1fr_10px] sm:grid-cols-[70px_1fr_20px] mt-1">
+      <div className="grid grid-cols-[1fr_40px] sm:grid-cols-[70px_1fr_40px] mt-1">
         <div className="hidden sm:block" />
         <div className="text-center text-xs sm:text-sm font-semibold text-gray-800">
           {bottomValue}
         </div>
-        <div />
       </div>
-
     </div>
   );
 };

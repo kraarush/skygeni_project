@@ -22,7 +22,7 @@ app.use(cors(corsOption));
 // api's 
 app.use('/api/v1/data', dataRoutes);
 
-
+// listining to the port
 app.listen(PORT, () => {
     console.log(`Server is live on port: ${PORT}`);
 });

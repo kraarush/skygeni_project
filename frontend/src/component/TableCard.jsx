@@ -92,7 +92,7 @@
                       {row.moved}
                     </TableCell>
 
-                    <TableCell align="right">{row.winRate}</TableCell>
+                    <TableCell align="right">{row.winRate}%</TableCell>
                   </TableRow>
                 ))}
 

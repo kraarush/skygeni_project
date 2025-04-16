@@ -40,7 +40,7 @@ const data = [
         "count": 3,
         "diffRate": 1,
         "diffacvRate": 1
-    }
+    },
 ]
 
 export default data;

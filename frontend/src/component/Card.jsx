@@ -14,15 +14,16 @@ const Card = ({heading, data}) => {
         {/* mapping the data for rectangular bars */}
         <div className='flex flex-col items-center gap-1 py-4 px-2'>
             {data.map((item,i) => {
-                return (
-                <RectangleBar 
-                  key={i} 
-                  label={item.label}
+              return (
+                <RectangleBar
+                  key={i}
+                  sideLabel={item.label}
                   middleValue={item.middleValue}
                   bottomValue={item.bottomValue}
                   rightPercentage={item.rightPercentage}
                   percentage = {item.percentage}
-                />)
+                />
+              );
             })}
         </div>
 

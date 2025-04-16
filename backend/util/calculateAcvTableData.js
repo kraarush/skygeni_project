@@ -3,13 +3,13 @@ import updatedAcvData from "./calculateAcvData.js";
 
 export let totalAcvValue = 0;
 
-// setting the acv table data
+// formatting table data according to the frontend needs
 export const acvTableData = updatedAcvData.map((item, index) => {
-    const came = item.acv || 0;
+    const came = item.middleValue;
     const nextItem = updatedAcvData[index + 1];
-    const moved = item.label === "Won" || !nextItem ? "-" : (nextItem.acv) || 0;
+    const moved = item.label === "Won" || !nextItem ? "-" : (nextItem.middleValue);
     const lost = item.label === "Won" ? "-" : (came - moved);
-    const winRate = `${item.rightPercentage}%`;
+    const winRate = item.rightPercentage;
     if (typeof lost === "number") totalAcvValue += lost;
     
     return {
