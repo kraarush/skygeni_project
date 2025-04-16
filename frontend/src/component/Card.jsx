@@ -5,25 +5,29 @@ const Card = ({heading, data}) => {
 
   return (
     <div className='flex flex-col border border-gray-300 w-full shadow-xl gap-3 py-2 rounded-sm'>
+
+      {/* top bar where the heading is */}
         <div className='py-3 px-3 text-xs md:text-sm border-b border-gray-300 w-full font-bold'>
-            Win Rate by {heading}: {data[0].rightPercentage+"%" || "no data"}
+            Win Rate by {heading}: {data[0].rightPercentage+"%"}
         </div>
+        
+        {/* mapping the data for rectangular bars */}
         <div className='flex flex-col items-center gap-1 py-4 px-2'>
-            {data.length>0 && data.map((item,index) => {
-                return <RectangleBar 
-                key={index} 
-                label={item.label}
-                middleValue={item.middleValue}
-                diffRate={item.diffRate}
-                diffacvRate={item.diffacvRate}
-                bottomValue={item.bottomValue}
-                rightPercentage={item.rightPercentage}
-                percentage = {item.percentage}
-                />
+            {data.map((item,i) => {
+                return (
+                <RectangleBar 
+                  key={i} 
+                  label={item.label}
+                  middleValue={item.middleValue}
+                  bottomValue={item.bottomValue}
+                  rightPercentage={item.rightPercentage}
+                  percentage = {item.percentage}
+                />)
             })}
         </div>
+
     </div>
   )
 };
 
-export default Card
+export default Card;

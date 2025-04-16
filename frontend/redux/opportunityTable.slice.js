@@ -9,10 +9,11 @@ export const OpportunitySlice = createSlice({
   name: 'opportunityTableData',
   initialState,
   reducers: {
+    // reducer to set the table data
     setOpportunityTableData: (state, action) => {
       state.tableData =  action.payload;
     },
-
+    // reducer to set total value
     setOpportunityTotalValue: (state, action) => {
       state.totalValue = action.payload
     }

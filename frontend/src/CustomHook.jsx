@@ -7,12 +7,13 @@ import { setLoading } from "../redux/loading.slice";
 import { setAcvTableData, setAcvTotalValue } from "../redux/acvTable.slice";
 import { setOpportunityTableData, setOpportunityTotalValue } from "../redux/opportunityTable.slice";
 
+// A chart of the redux store is attached in the repo readme file along with website screenshots
 
-// custom hook for setting data globally in the redux store
+// custom hook for setting data in the redux store
 const CustomHook = () => {
   const dispatch = useDispatch();
   const backend_url = import.meta.env.VITE_BACKEND_URL;
-
+ 
   useEffect(() => {
     const getData = async () => {
       try {

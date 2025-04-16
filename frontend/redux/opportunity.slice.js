@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = [];
 
+// setting the chart data
 export const OpportunitySlice = createSlice({
   name: 'opportunityData',
   initialState,

@@ -9,10 +9,11 @@ export const acvSlice = createSlice({
   name: 'acvTableData',
   initialState,
   reducers: {
+    // reducer function to set the table data
     setAcvTableData: (state, action) => {
       state.tableData =  action.payload;
     },
-
+    // reducer function to set the total value
     setAcvTotalValue: (state, action) => {
       state.totalValue = action.payload
     }
