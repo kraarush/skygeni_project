@@ -11,7 +11,7 @@ const Footer = () => {
           <h2 className="text-2xl font-bold">
             Skygeni
           </h2>
-          <p className="text-sm">{year} Skygeni Assessement project</p>
+          <p className="text-sm">{year} Skygeni Assessment project</p>
           <p className="text-sm text-gray-700">
             Developed by{" "}
             <a href="https://github.com/kraarush" className="text-blue-500 hover:text-blue-700 hover:font-semibold" >
